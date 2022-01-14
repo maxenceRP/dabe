@@ -68,7 +68,7 @@
 
   Cette fenêtre permet de visualiser et de modifier vos données d'intérimaire.
   
-  Elle contient tous les champs l'intérimaire ainsi que le bouton `supprimer` qui permet de supprimer l'intérimaire de vos données. La fenetre contient aussi un tableau contenant chaque transaction de votre intérimaire.
+  Elle contient tous les champs l'intérimaire ainsi que le bouton `supprimer` qui permet de supprimer l'intérimaire de vos données. La fenêtre contient aussi un tableau contenant chaque transaction de votre intérimaire.
   
 - **fenêtre paramètres :**
 
