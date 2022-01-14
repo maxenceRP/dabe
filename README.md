@@ -41,9 +41,16 @@
     Il contient 2 boutons en bas à droite : un bouton `vider l'historique` qui permet de supprimer les anciens rapports ainsi qu'un bouton `rafraîchir` qui permet de mettre à jour la table de donnée au-dessus. L'onglet contient un tableau de tous vos rapports que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'un rapport en double-cliquant sur la ligne du rapport souhaité. Enfin, les deux derniers boutons sont situés en bas à gauche de l'onglet et permettent respectivement de trier le tableau de donnée, au-dessus, par banque et par type de d'import (paies ou acomptes).
 
 - **fenêtre descriptif rapport :**
-- **fenêtre descriptif import :**
-- **fenêtre descriptif transaction :**
 
+  Cette fenêtre permet de visualiser les données à propos d'un rapport sélectionné.
+  
+  Elle contient tous les champs d'un rapport ainsi que 2 tableaux situés sur la partie inférieure de la fenêtre qui affiche soit les imports `par agence` contenus dans ce rapport, soit la liste des transactions `par intérimaire` contenues dans ce rapport. Vous pouvez aussi ouvrir le descriptif d'un import, du premier tableau, en double-cliquant sur la ligne de l'import souhaité. Enfin, le bouton `imprimer` permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau affichée lorsque vous avez appuyé dessus.
+  
+- **fenêtre descriptif import :**
+
+  Cette fenêtre permet de visualiser les données à propos d'un import sélectionné.
+  
+  Elle contient tous les champs d'un import ainsi qu'une prévisualisation du document PDF lié à l'import en haut à droite de la fenêtre, celle-ci est double-cliquable et affiche le PDF dans un format plus grand et lisible. Vous pouvez aussi voir l'ensemble des transactions liées à cet import dans le tableau situé sur la partie inférieure de la fenêtre.
 
 - **fenêtre descriptif agence :**
 
@@ -67,11 +74,11 @@
 
   Cette fenêtre permet de choisir les paramètres de l'application qui sont :
   - Adresse mail générique : permet de donner l'adresse générique pour les tests
-  - Adresse mail de retour : permet de choisir si les mails envoyés apres traitement d'import vont être envoyé aux agences ou à l'adresse générique de test.
-  - Ajout des erreurs de banque : permet d'ajouter ou non les erreurs (doublons, erreur IBAN, ...) au rapports
+  - Adresse mail de retour : permet de choisir si les mails après traitement d'import vont être envoyés aux agences ou à l'adresse générique de test.
+  - Ajout des erreurs de banque : permet d'ajouter ou non les erreurs (doublons, erreur IBAN, ...) aux rapports
 
-- **fenètre erreurs :**
+- **fenêtre erreurs :**
 
-  Cette fenêtre permet de visualiser les erreurs quotidiennes des rapport.
+  Cette fenêtre permet de visualiser les erreurs quotidiennes des rapports.
   
-  Elle contient un compteur d'erreur à gauche qui indeque le nombre d'erreurs dans les rapports générés ce jour puis deux tableau `import` et `intérimaire` qui affiche les lignes erronnées de vos rapports. Le bouton `supprimer` permet d'enlever l'erreur selectionnée dans le tableau afin de cacher les erreurs que vous ne voulez plus voir.
+  Elle contient un compteur d'erreur à gauche qui indique le nombre d'erreurs dans les rapports générés ce jour puis 2 tableaux `import` et `intérimaire` qui affiche les lignes erronées de vos rapports. Le bouton `supprimer` permet d'enlever l'erreur sélectionnée dans le tableau afin de cacher les erreurs que vous ne voulez plus voir.
