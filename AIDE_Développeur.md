@@ -34,23 +34,23 @@
 - **Collection COL_XML**
   - Procédure `Ajoute_Groupe_Hdr(sXMLBanque est une chaîne, GroupeNoeud est un xmlNoeud, DateDeTraitement est une chaîne)`
   
-    Cette procédure permet de 
+    Cette procédure permet d'ajouter au fichier XML de rapport donné en paramètre (`sXMLBanque`) une balise **GrpHdr** en copiant celle du fichier XML d'import donné en paramètre (`GroupeNoeud`). 
   
   - Procédure `Ajoute_Pmt_Inf(sXMLBanque est une chaîne, PmtNoeud est un xmlNoeud, sDateDeTraitement est une chaîne)`
   
-    Cette procédure permet de 
+    Cette procédure permet d'ajouter au fichier XML de rapport donné en paramètre (`sXMLBanque`) une balise **PmtInf** en copiant celle du fichier XML d'import donné en paramètre (`PmtNoeud`). 
   
   - Procédure `Ajoute_Virement(sXMLBanque est une chaîne, TransactionNoeud est un xmlNoeud)`
   
-    Cette procédure permet de 
+    Cette procédure permet de créer et d'ajouter au fichier XML de rapport donné en paramètre (`sXMLBanque`) une balise **CdtTrfTxInf** en copiant celle du fichier XML d'import donné en paramètre (`TransactionNoeud`).
   
   - Procédure `Choisir_Rapport(sIBAN_Actuel est une chaîne, bTypeVirement est un booléen)`
   
-    Cette procédure permet de 
+    Cette procédure permet de choisir dans quel rapport devrait être concaténé un fichier d'import avec comme IBAN de banque `sIBAN_Actuel` et comme type de virement `bTypeVirement`. Si jamais l'import trouve sa place dans un des rapports entrain d'être généré, le numéro du rapport est renvoyé, sinon un nouveau rapport est créé pour l'accueillir.
   
   - Procédure `Init_XML(FichierXML est un xmlNoeud)`
   
-    Cette procédure permet de 
+    Cette procédure permet d'attribuer 
   
   - Procédure `LectureXML(sFichierXML est une chaîne, sNomAgence est une chaîne, sFichierPDF est une chaîne)`
   
