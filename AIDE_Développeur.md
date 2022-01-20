@@ -1,20 +1,65 @@
 # Aide développeur
-## Tutoriel d'utilisation
+## Explication des Procédures
 
-Le but de l'application est de générer des rapports qui sont la concaténation de plusieurs imports (mails de virement) d'une même banque d'acompte ou de paie.
-Il y a quelques étapes à suivre afin de les générer :
-
-- **1ère étape :** La récupération des imports non-traités
-
-  Dans l'onglet de traitement, il suffit de cliquer sur le bouton `traitement` en bas à gauche afin de récupérer tous les mails non-traités et de les afficher dans le tableau juste au-dessus.
+- **Collection COL_ProcéduresGlobales**
+  - Procédure `Connecte_Base_De_Donnée()`
+    
+    Cette procédure permet d'initialiser notre base de données. On récupère les identifiants contenus dans le fichier INI et on essaye de se connecter au serveur contenant la base de données. En cas de d'échec, on prendra la base locale indiquée dans le fichier INI.
+    
+  - Procédure `Initialisation_Session()`
   
-- **2ème étape :** La génération des rapports
-
-  Une fois votre liste de mails affichée dans l'onglet de traitement, vous pouvez décider des mails que vous voulez ajoutez dans le rapport en cochant les lignes qui vous intéressent (il est possible de cocher directement la case en haut du tableau pour sélectionner ou déselectionner toutes les lignes). Quand votre choix est fait, vous pourrez enfin lancer la génération du rapport en cliquant sur le bouton `génération` en bas à droite de l'onglet, ce qui aura pour conséquence d'ouvrir la fenêtre erreurs et de vous indiquer combien de rapports vous avez généré.
+    Cette procédure permet de récupérer la majorité des éléments contenus dans le fichier INI et initialise la session de réception des imports. Elle renvoie une erreur si certains paramètres ne sont pas présents ou incorrectes.
   
-- **3ème étape :** La gestion des rapports
-
-  Vous avez généré des rapports et vous voulez y accéder alors rendez-vous dans l'onglet historique. Vous y trouverez un tableau contenant tous vos rapports que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'un rapport en double-cliquant sur la ligne du rapport souhaité. Dans ce rapport, vous aurez accès au bouton `imprimer` qui permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau des imports affichée lorsque vous avez appuyé dessus. Vous pouvez accéder au dossier de sauvegarde des rapports grâce à l'icône de dossier en haut à droite, à côté du champ `fichier XML`.
+  - Procédure `Vérifie_IBAN(sNuméroIBAN est une chaîne)`
+  
+    Cette procédure permet de vérifier l'intégrité de la structure de l'IBAN donné en paramètre. 
+  
+- **Collection COL_Rapport_Agence**
+  - Procédure `Envoi_Rapport_Agence(sCodeANA_Agence est une chaîne, sMontantTot est une chaîne)`
+  
+    Cette procédure permet d'envoyer un mail de confirmation de traitement d'un import soit à l'agence en paramètre soit à l'adresse mail générique en fonction de la valeur de la variable globale gnModeRetour. Cette variable a été récupérée dans le fichier INI.
+  
+  - Procédure `Fermeture_Email_Rapport()`
+  
+    Cette procédure permet de fermer la session mail utilisée qui sert à envoyer les mails de confirmation de traitement d'un import.
+  
+  - Procédure `Ouverture_Email_Rapport()`
+  
+    Cette procédure permet d'ouvrir la session mail utilisée qui sert à envoyer les mails de confirmation de traitement d'un import.
+  
+  - Procédure `Redémarre_Session()`
+  
+    Cette procédure permet de lancer simultanément les deux procédures `Fermeture_Email_Rapport()` et `Ouverture_Email_Rapport()` afin de réinitialiser la session mail.
+  
+- **Collection COL_XML**
+  - Procédure `Ajoute_Groupe_Hdr(sXMLBanque est une chaîne, GroupeNoeud est un xmlNoeud, DateDeTraitement est une chaîne)`
+  
+    Cette procédure permet de 
+  
+  - Procédure `Ajoute_Pmt_Inf(sXMLBanque est une chaîne, PmtNoeud est un xmlNoeud, sDateDeTraitement est une chaîne)`
+  
+    Cette procédure permet de 
+  
+  - Procédure `Ajoute_Virement(sXMLBanque est une chaîne, TransactionNoeud est un xmlNoeud)`
+  
+    Cette procédure permet de 
+  
+  - Procédure `Choisir_Rapport(sIBAN_Actuel est une chaîne, bTypeVirement est un booléen)`
+  
+    Cette procédure permet de 
+  
+  - Procédure `Init_XML(FichierXML est un xmlNoeud)`
+  
+    Cette procédure permet de 
+  
+  - Procédure `LectureXML(sFichierXML est une chaîne, sNomAgence est une chaîne, sFichierPDF est une chaîne)`
+  
+    Cette procédure permet de 
+  
+  - Procédure `Sauve_Fichiers_XML()`
+  
+    Cette procédure permet de 
+  
 
 ## Description des fenêtres de l'application
 
