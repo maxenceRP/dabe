@@ -1,6 +1,22 @@
 # Aide
+## Tutoriel d'utilisation
 
-## Description des fenêtres de l'application:
+Le but de l'application est de générer des rapports qui sont la concaténation de plusieurs imports (mails de virement) d'une même banque d'acompte ou de paie.
+Il y a quelques étapes à suivre afin de les générer :
+
+- **1ère étape :** La récupération des imports non-traités
+
+  Dans l'onglet de traitement, il suffit de cliquer sur le bouton `traitement` en bas à gauche afin de récupérer tous les mails non-traités et de les afficher dans le tableau juste au-dessus.
+  
+- **2ème étape :** La génération des rapports
+
+  Une fois votre liste de mails affichée dans l'onglet de traitement, vous pouvez décider des mails que vous voulez ajoutez dans le rapport en cochant les lignes qui vous intéressent (il est possible de cocher directement la case en haut du tableau pour sélectionner ou déselectionner toutes les lignes). Quand votre choix est fait, vous pourrez enfin lancer la génération du rapport en cliquant sur le bouton `génération` en bas à droite de l'onglet, ce qui aura pour conséquence d'ouvrir la fenêtre erreurs et de vous indiquer combien de rapports vous avez généré.
+  
+- **3ème étape :** La gestion des rapports
+
+  Vous avez généré des rapports et vous voulez y accéder alors rendez-vous dans l'onglet historique. Vous y trouverez un tableau contenant tous vos rapports que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'un rapport en double-cliquant sur la ligne du rapport souhaité. Dans ce rapport, vous aurez accès au bouton `imprimer` qui permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau des imports affichée lorsque vous avez appuyé dessus. Vous pouvez accéder au dossier de sauvegarde des rapports grâce à l'icône de dossier en haut à droite, à côté du champ `fichier XML`.
+
+## Description des fenêtres de l'application
 
 - **fenêtre principale :**
 
@@ -10,31 +26,31 @@
   Le bouton en haut à gauche permet d'ouvrir la fenêtre d'aide à tout moment et les boutons en haut à droite ouvrent respectivement la fenêtre d'erreur et la fenêtre paramètres.
   Chaque onglet a ces fonctionnalités doc voici un descriptif de chacun :
   
-  - Traitement :
+  - **Traitement :**
   
     L'onglet de traitement permet de lancer la génération d'un rapport.
     
     Il contient un bouton `traitement` qui permet de récupérer tous les mails non-traités et de les afficher dans le tableau au-dessus. Une fois votre liste de mails affichée, vous pouvez décider des mails que vous voulez ajoutez dans le rapport en cochant les lignes qui vous intéressent (il est possible de cocher directement la case en haut du tableau pour sélectionner ou déselectionner toutes les lignes). Quand votre choix est fait, vous pourrez enfin lancer la génération du rapport en cliquant sur le bouton `génération` en bas à droite de l'onglet, ce qui aura pour conséquence d'ouvrir la fenêtre erreurs et de vous indiquer combien de rapports vous avez généré.
     
-  - Agences :
+  - **Agences :**
 
     L'onglet agences permet de gérer la base de données des agences.
     
     Il contient un bouton `nouveau` qui permet d'ajouter une nouvelle agence à votre base de données ainsi qu'un bouton `rafraîchir` qui permet de mettre à jour la table de donnée au-dessus. Enfin, l'onglet contient un tableau de toutes vos agences que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'une agence en double-cliquant sur la ligne de l'agence souhaitée.
     
-  - Banques :
+  - **Banques :**
   
     L'onglet banques permet de gérer la base de données des banques.
     
     Il contient un bouton `nouveau` qui permet d'ajouter une nouvelle banque à votre base de données ainsi qu'un bouton `rafraîchir` qui permet de mettre à jour la table de donnée au-dessus. Enfin, l'onglet contient un tableau de toutes vos banques que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'une banque en double-cliquant sur la ligne de la banque souhaitée.
     
-  - Intérimaires :
+  - **Intérimaires :**
 
     L'onglet intérimaires permet de gérer la base de données des intérimaires.
     
     Il contient un bouton `nouveau` qui permet d'ajouter un nouvel intérimaire à votre base de données ainsi qu'un bouton `rafraîchir` qui permet de mettre à jour la table de donnée au-dessus. Enfin, l'onglet contient un tableau de tous vos intérimaires que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'un intérimaire en double-cliquant sur la ligne de l'intérimaire souhaité.
     
-  - Historique :
+  - **Historique :**
 
     L'onglet historique permet de consulter vos rapports précédemment générés.
     
@@ -44,7 +60,7 @@
 
   Cette fenêtre permet de visualiser les données à propos d'un rapport sélectionné.
   
-  Elle contient tous les champs d'un rapport ainsi que 2 tableaux situés sur la partie inférieure de la fenêtre qui affiche soit les imports `par agence` contenus dans ce rapport, soit la liste des transactions `par intérimaire` contenues dans ce rapport. Vous pouvez aussi ouvrir le descriptif d'un import, du premier tableau, en double-cliquant sur la ligne de l'import souhaité. Enfin, le bouton `imprimer` permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau affichée lorsque vous avez appuyé dessus. Vous pouvez accéder au dossier de sauvegarde des rapports grâce à l'icone de dossier en haut à droite, à côté du champ `fichier XML`.
+  Elle contient tous les champs d'un rapport ainsi que 2 tableaux situés sur la partie inférieure de la fenêtre qui affiche soit les imports `par agence` contenus dans ce rapport, soit la liste des transactions `par intérimaire` contenues dans ce rapport. Vous pouvez aussi ouvrir le descriptif d'un import, du premier tableau, en double-cliquant sur la ligne de l'import souhaité. Enfin, le bouton `imprimer` permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau affichée lorsque vous avez appuyé dessus. Vous pouvez accéder au dossier de sauvegarde des rapports grâce à l'icône de dossier en haut à droite, à côté du champ `fichier XML`.
   
 - **fenêtre descriptif import :**
 
