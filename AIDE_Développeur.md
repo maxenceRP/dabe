@@ -46,19 +46,19 @@
   
   - Procédure `Choisir_Rapport(sIBAN_Actuel est une chaîne, bTypeVirement est un booléen)`
   
-    Cette procédure permet de choisir dans quel rapport devrait être concaténé un fichier d'import avec comme IBAN de banque `sIBAN_Actuel` et comme type de virement `bTypeVirement`. Si jamais l'import trouve sa place dans un des rapports entrain d'être généré, le numéro du rapport est renvoyé, sinon un nouveau rapport est créé pour l'accueillir.
+    Cette procédure permet de choisir dans quel rapport devrait être concaténé un fichier d'import avec comme IBAN de banque `sIBAN_Actuel` et comme type de virement `bTypeVirement`. Si jamais l'import trouve sa place dans un des rapports en train d'être généré, le numéro du rapport est renvoyé, sinon le prochain identifiant de rapport disponible est renvoyé.
   
   - Procédure `Init_XML(FichierXML est un xmlNoeud)`
   
-    Cette procédure permet d'attribuer 
+    Cette procédure permet d'attribuer un rapport à chaque import en paramètre (`FichierXML`). Si le rapport n'est pas encore créé alors on va initialiser un nouveau fichier XML et lui ajouter toutes les balises toutes les balises obligatoires grâce aux 3 fonctions `Ajoute ...` . Si jamais le rapport existe déjà, on va update les éléments de celui-ci avec les nouvelles données de l'import.
   
   - Procédure `LectureXML(sFichierXML est une chaîne, sNomAgence est une chaîne, sFichierPDF est une chaîne)`
   
-    Cette procédure permet de 
+    Cette procédure permet de parcourir le fichier XML d'import et de lancer toutes les autres procédures permettant de concaténer ce fichier avec d'autres dans un rapport en tenant compte des erreurs et des paramètres de l'application.
   
   - Procédure `Sauve_Fichiers_XML()`
   
-    Cette procédure permet de 
+    Cette procédure permet de sauvegarder les fichiers de rapport précédemment créés.
   
 
 ## Description des fenêtres de l'application
