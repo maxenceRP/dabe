@@ -1,4 +1,4 @@
-# Aide
+# Aide utilisateur
 ## Tutoriel d'utilisation
 
 Le but de l'application est de générer des rapports qui sont la concaténation de plusieurs imports (mails de virement) d'une même banque d'acompte ou de paie.
