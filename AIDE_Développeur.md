@@ -59,6 +59,32 @@
   - Procédure `Sauve_Fichiers_XML()`
   
     Cette procédure permet de sauvegarder les fichiers de rapport précédemment créés.
+    
+## Explication des Requêtes
+
+- **Requête REQ_Email_Agence_Avec_CodeANA**
+
+  Cette requête permet d'afficher tous les MAIL et Agence tels que Agence.CODE ANA  est égal à 'CodeAgence'.
+
+- **Requête REQ_Erreur_Import**
+
+  Cette requête permet d'afficher tous les IDImport, IDRapport, Statut, CODE ANA, IBANBanque, DateReception, DateTraitement, FichierXML, FichierPDF, NbTransaction, MontantTot, Utilisateur, Type et HashFichierXML  tels que DateTraitement  est supérieur ou égal à 'ParamDateActuelle' ET Statut  est différent de 'valide'.
+  
+- **Requête REQ_Erreur_Interimaire**
+
+  Cette requête permet d'afficher tous les Nom, IBANInterim, BICInterim, AcompteTotal et Statut  tels que Rapport.DateTraitement  est supérieur ou égal à 'ParamDateActuelle' ET Statut  est différent de 'valide' .
+  
+- **Requête REQ_MultipleVirement**
+
+  Cette requête permet d'afficher tous les IBANInterim  tels que IBANInterim  est égal à 'IBANInterimaire' ET Import.DateReception  est supérieur ou égal à 'DateReception'.
+  
+- **Requête REQ_Rapport_Interimaire**
+
+  Cette requête permet d'afficher tous les Nom, IBANInterim, BICInterim, Statut et Montant  tels que Rapport.IDRapport  est égal à ID_du_Rapport.
+  
+- **Requête REQ_Transactions_Avec_IBANInterim**
+
+  Cette requête permet d'afficher tous les IDTransaction, IDImport, Montant, DateReception et DateTraitement  tels que Transaction.IBANInterim  est égal à 'ParamIBANInterim'.
   
 
 ## Description des fenêtres de l'application
