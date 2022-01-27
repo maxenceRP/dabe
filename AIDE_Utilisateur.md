@@ -8,9 +8,11 @@ Il y a quelques étapes à suivre afin de les générer :
 
   Dans l'onglet de traitement, il suffit de cliquer sur le bouton `traitement` en bas à gauche afin de récupérer tous les mails non-traités et de les afficher dans le tableau juste au-dessus.
   
+  ![](mg.png)
+  
 - **2ème étape :** La génération des rapports
 
-  Une fois votre liste de mails affichée dans l'onglet de traitement, vous pouvez décider des mails que vous voulez ajoutez dans le rapport en cochant les lignes qui vous intéressent (il est possible de cocher directement la case en haut du tableau pour sélectionner ou déselectionner toutes les lignes). Quand votre choix est fait, vous pourrez enfin lancer la génération du rapport en cliquant sur le bouton `génération` en bas à droite de l'onglet, ce qui aura pour conséquence d'ouvrir la fenêtre erreurs et de vous indiquer combien de rapports vous avez généré.
+  Une fois votre liste de mails affichée dans l'onglet de traitement, vous pouvez décider des mails que vous voulez ajoutez dans le rapport en cochant les lignes qui vous intéressent (il est possible de cocher directement la case en haut du tableau pour sélectionner ou déselectionner toutes les lignes) **{1}**. Quand votre choix est fait, vous pourrez enfin lancer la génération du rapport en cliquant sur le bouton `génération` en bas à droite de l'onglet, ce qui aura pour conséquence d'ouvrir la fenêtre erreurs et de vous indiquer combien de rapports vous avez généré **{2}**.
   
 - **3ème étape :** La gestion des rapports
 
