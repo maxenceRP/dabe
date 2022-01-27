@@ -7,16 +7,20 @@ Il y a quelques étapes à suivre afin de les générer :
 - **1ère étape :** La récupération des imports non-traités
 
   Dans l'onglet de traitement, il suffit de cliquer sur le bouton `traitement` en bas à gauche afin de récupérer tous les mails non-traités et de les afficher dans le tableau juste au-dessus.
-  
-  ![](mg.png)
-  
+  ![etape1](https://user-images.githubusercontent.com/47245748/151384282-f07b4780-2e96-4ff7-901c-1d59b37800c5.png)
+
 - **2ème étape :** La génération des rapports
 
   Une fois votre liste de mails affichée dans l'onglet de traitement, vous pouvez décider des mails que vous voulez ajoutez dans le rapport en cochant les lignes qui vous intéressent (il est possible de cocher directement la case en haut du tableau pour sélectionner ou déselectionner toutes les lignes) **{1}**. Quand votre choix est fait, vous pourrez enfin lancer la génération du rapport en cliquant sur le bouton `génération` en bas à droite de l'onglet, ce qui aura pour conséquence d'ouvrir la fenêtre erreurs et de vous indiquer combien de rapports vous avez généré **{2}**.
-  
+  ![etape2](https://user-images.githubusercontent.com/47245748/151384301-348cf865-6961-42e4-8575-0f88a74b147b.png)
+
 - **3ème étape :** La gestion des rapports
 
-  Vous avez généré des rapports et vous voulez y accéder alors rendez-vous dans l'onglet historique. Vous y trouverez un tableau contenant tous vos rapports que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'un rapport en double-cliquant sur la ligne du rapport souhaité. Dans ce rapport, vous aurez accès au bouton `imprimer` qui permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau des imports affichée lorsque vous avez appuyé dessus. Vous pouvez accéder au dossier de sauvegarde des rapports grâce à l'icône de dossier en haut à droite, à côté du champ `fichier XML`.
+  Vous avez généré des rapports et vous voulez y accéder alors rendez-vous dans l'onglet historique. Vous y trouverez un tableau contenant tous vos rapports que vous pouvez trier en cliquant sur le haut des colonnes, vous pouvez aussi ouvrir le descriptif d'un rapport en double-cliquant sur la ligne du rapport souhaité **{1}**. Dans ce rapport, vous aurez accès au bouton `imprimer` qui permet d'ouvrir une prévisualisation d'impression de votre rapport avec le tableau des imports affichée lorsque vous avez appuyé dessus **{3}**. Vous pouvez accéder au dossier de sauvegarde des rapports grâce à l'icône de dossier en haut à droite, à côté du champ `fichier XML` **{2}**.
+
+![etape3_1](https://user-images.githubusercontent.com/47245748/151386459-47371b26-7647-490b-83b6-24fa17cbeaba.png)
+
+![etape3_23](https://user-images.githubusercontent.com/47245748/151385521-9a456da8-78c7-4a10-98ee-36fb3e8a9e23.png)
 
 ## Description des fenêtres de l'application
 
